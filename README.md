@@ -1,6 +1,6 @@
 ## Population genomics of _Centurus santacruzi_ Complex
 
-**Three directories are included in this repository:**  
+**This repository includes the fallowing directories and files:**  
 **_bin_**: contains four scripts and a parameter configuration file to run ipyrad  
 **_data_**: contains the directories *raw* (with "raw" sequence data of each sample), *clean* (with "clean" sequence data after trimming with Trimmomatic), *refgen* (containing the reference genome of _Centurus aurifrons_, the sister species), and *ipyrad_runs* (containing ipyrad run outputs, which constitute the input file fon the subsequent analyses)  
 **_meta_**: contains metadata of sequenced individuals 
