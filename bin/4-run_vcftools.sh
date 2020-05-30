@@ -7,6 +7,9 @@ mkdir -p ../data/res_vcftools
 ## path to vcf output
 path_to_output=../data/res_vcftools
 
+## decompress the vcf file
+gzip -d $path_to_input/*.gz
+
 ## show number of samples and sites
 vcftools --vcf $path_to_input/*.vcf
 
@@ -26,8 +29,4 @@ vcftools --vcf $path_to_output/santacruzi3030.recode.vcf --het --out $path_to_ou
 vcftools --vcf $path_to_output/santacruzi3030.recode.vcf --het --out $path_to_output/santas3030_het
 
 ## Reports a p-value for each site from a Hardy-Weinberg Equilibrium
-vcftools --vcf $path_to_output/santacruzi3030.recode.vcf --hardy --out $path_to_output/santas3030_hardy
-
-
-
-
+vcftools --vcf $path_to_output/santacruzi3030.recode.vcf --hardy --out $path_to_output/santas3030_hardysantas3030_hardy
