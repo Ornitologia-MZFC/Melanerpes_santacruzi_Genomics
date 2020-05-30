@@ -7,9 +7,6 @@ mkdir -p ../data/res_vcftools
 ## path to vcf output
 path_to_output=../data/res_vcftools
 
-decompress the file containing the vcf
-gzip -d ../data/res_ipyrad/run_w_refgen/run3-refgen.vcf.tar.gz 
-
 ## show number of samples and sites
 vcftools --vcf $path_to_input/*.vcf
 
