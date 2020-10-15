@@ -10,7 +10,7 @@ The _scripts_ contained in *bin* allow to complete the workflow represented in t
 ![](workflow.png) 
   
 
-**_run_trimmomatic.sh_[https://github.com/AlexLlanesQuevedo/santacruzi_project/blob/master/bin/2-run_trimmomatic.sh]** runs a loop for executing trimmomatic on raw samples, specifically the function slidingwindow. Slidingwindow starts scanning at the 5´ end and clips the readonce the average quality within the window (4 bp) falls below a quality threshold (20). **Raw data is not included in the repository, so this script cannot be executed.**   
+**_run_trimmomatic.sh_(https://github.com/AlexLlanesQuevedo/santacruzi_project/blob/master/bin/2-run_trimmomatic.sh)** runs a loop for executing trimmomatic on raw samples, specifically the function slidingwindow. Slidingwindow starts scanning at the 5´ end and clips the readonce the average quality within the window (4 bp) falls below a quality threshold (20). **Raw data is not included in the repository, so this script cannot be executed.**   
 **_run_ipyrad.sh_** runs ipyrad, an interactive assembly and analysis toolkit for restriction-site associated DNA (RAD-seq) and related data types. Configuration parameters are specified in *params-run_w_refgen.txt*. **Clean data is not included in the repository, so this script cannot be executed.**   
 **_run_vcftools.sh_** for filtering individuals and SNPs sites containing a maximun of 30% of missing data and write in a new vcf file; as well as calculating allele frequency, HWE statistics and inbreeding coefficient.**run first.**    
 **_run_plink.sh_** runs a basic command for converting .vcf format to .plink. **run once vcftools instructions are completed.**    
