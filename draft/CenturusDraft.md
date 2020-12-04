@@ -16,7 +16,7 @@ suggests the presence of multiple hybridization events between parapatric and al
 biogeography and evolution of Mesoamerican bird diversity, by strengthening the systematic knowledge, and consequently adding to the adequate management plans and conservation 
 of these species and their habitats.
 
-Introduction
+Introduction  
 Species is a key concept in Biology; nevertheless, after centuries of use, its definition still defies the limits of our knowledge and power of abstraction. Particularly for 
 living taxa, one of the elements entangling the definition is that the species are complex biologically units, composed by populations which continuously evolve to adapt to the 
 changing environmental conditions and may exchange individuals and genetic information. Such populations can be differentiated (gradually); so, the challenge is to know where to
