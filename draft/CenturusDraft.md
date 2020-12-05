@@ -21,6 +21,7 @@ living taxa, one of the elements entangling the definition is that the species a
 changing environmental conditions and may exchange individuals and genetic information. Such populations can be differentiated (gradually); so, the challenge is to know where to
 draw the line and delimit truly natural and divergent entities. To deal with this matter, taxa with recent phylogenetic divergence, introgression, high phenotypic plasticity, 
 ongoing differentiation of varieties, and partial barriers to gene flow, are often considered as species complexes (Dumunil et al. 2012), superspecies, or split into subespecies. Those concepts comprise a large amount of variation that we cannot easily discriminate and classify. However, going further in the clarification of evolutionary relationships of those groups is relevant not only for theoretical purposes in systematics, evolution, biogeography, and ecology, but also for management and conservation of biodiversity.
+  
 The Velazquez woodpecker Centurus santacruzi (sensu García-Trejo et al., 2009) is one of these highly variable taxa that has stirred debates about its taxonomic status and 
 evolutionary history. This polytypic species has been historically included within the complex of the Golden-fronted woodpecker Centurus aurifrons (Ridgway, 1914; Peters, 1948; 
 AOU 1957, 1983, 1998). However, the use of genetic markers has provided evidence to separate both and to recognize them as different species (Garcia-Trejo et al. 2009; 
@@ -32,14 +33,14 @@ sympatry or parapatry of the forms of the species that also have a limited cross
 
 _Fig 1. Distribution of the Velazquez woodpecker, Centurus santacruzi and its described subspecies/morphotypes. On the left, distribution of Centurus santacruzi subespecies 
 according to Miller et al. (1957), Selander and Giller (1963), and Monroe (1968). On the right, distribution of morphotypes according to Benites et al. (2019)._
-
+  
 Molecular studies, based on few mitochondrial and nuclear genes, have proposed the divergence of the complex from the Golden-fronted woodpecker about two-five million years 
 (Dufort 2016; Navarro-Sigüenza et al. 2017). During this time were supposed to be differentiated  the clades containaining C. aurifrons from northern Mexico (Cohahuila and 
 Tamaulipas) and C. carolinus, its sister species distributed in the United States, from the tropical populations of C. santacruzi distributed from Querétaro and Veracruz to 
 Honduras and El Salvador (García-Trejo et al., 2009; Dufort, 2016, Navarro-Sigüenza et al. 2017). Nevertheless, any of these studies provides well-resolved phylogenetic 
 relationships within this group or satisfactorily explains the geographical variation and the population’s dynamics along the distribution area of the species (García-Trejo et 
 al., 2009; Dufort, 2016, Navarro-Sigüenza et al. 2017).
-
+  
 Genomic approaches are enlightening the complexity of evolutionary history of species. Next Generation Sequencing (NGS) methods allow overcoming important limitation of 
 traditional markers by expanding in several magnitude orders the number of sampled loci and covering the whole genome or a representative part of it (Goodwin et al. 2016). 
 Particularly, genotyping by sequencing with the NextRAD (Nextera-tagmented, Reductively Amplified DNA) methods allow to obtain short sequences (~ 150 base pairs) flanked by 
@@ -49,13 +50,13 @@ retrieved from such methods of NGS is useful for population structure analyses, 
 phylogenetic inferences from nucleotide substitution models, as well as identification of loci or genes related to local adaptations of populations to different environmental 
 conditions (De la Torre at al. 2019) through methods as of genetic-environmental association and differentiation (Pritchard et al. 2010; Whitlock and Lotterhos 2015). In the 
 same way, this information allows to make inferences about the extent of hybridization events or incomplete lineage sorting in many taxa, offering new opportunities to understand the complex phylogenetic relationships between the organisms (Twyford and Ennos 2012).
-
+  
 The present study addresses the unresolved evolutionary history and relationships of C. santacruzi lineages and the complex C. aurifrons-C. carolinus by using genomic data. 
 Our main goals were: 1) to characterize the genetic diversity and structure within the Velazquez woodpecker complex; 2) to evaluate the correspondence of this variation with 
 geography and ecology, and 3) to reconstruct the  phylogenetic relationships within the complex and with the Golden-fronted and Red-bellied woodpeckers by using Maximum 
 Likelihood and Bayesian methods. 
-
-
+  
+  
 **METHODS**
 **Sampling.-** We collected 64 frozen or ethanol-preserved tissue samples (muscle, heart or liver), or pieces of toepads from specimens of Centurus santacruzi, covering almost 
 complete continental distribution of the species complex (Fig 2). We also included samples of C. aurifrons and C. carolinus, species that compose the sister clade of C. 
@@ -65,44 +66,45 @@ Sciences of the National Autonomous University of Mexico, Mexico.
 
 _Fig 2. Geographic distribution of samples included in the study. In gray is highlighted the distribution range for Centurus aurifrons-C. santacruzi in Mexico. Dotted lines 
 respresent the ocurrence areas of subespecies of C. santacruzi according to Miller et al. (1957), Selander and Giller (1963), and Monroe (1968)._
-
+  
 **DNA Extraction and NextRAD Sequencing.-**  Total genomic DNA was extracted using Proteinase K digestion, followed by isolation with the DNeasy Blood & Tissue Kit (Quiagen) 
 following manufacturer instructions. We estimated the quality and amount of DNA by electrophoresis in 1% agarose gels. All samples yielded high molecular weight DNA of more 
 than 50 ng/µl.  
 Genomic DNA was converted into NextRAD genotyping-by-sequencing libraries in SNPsaurus LLC (Oregon, USA) as in Russello et al (2015). Genomic DNA (~10 ng) was fragmented with Nextera Flex reagent (Illumina, Inc), which also ligated short adapter sequences to the ends of the fragments. Fragmented DNA was amplified with one of the primers matching the adapter and extending 10 nucleotides into the genomic DNA with the selective sequence GTGTAGAGCC. The constructs were amplificated by PCR using Phusion® Hot Start Flex DNA Polymerase (New England Biolabs; Massachusetts, USA). The PCR program used includes an initial step of 3 min at 72 °C, followed by 30 s at 98 °C, and five cycles of denaturation at 98 °C for 10 s, annealing at 63 °C for 30 s, and 3 min extension at 72 °C. Amplicons were pooled and the resulting libraries were purified using AMPure XP beads (Agencourt Bioscience Corporation; Massachusetts, USA) at 0.7 ×. Then, the purified libraries were size selected to 350-800 base pairs and sequenced on a HiSeq 4000 with one lane of 150 bp reads (Genomics Core Facility, University of Oregon).
+  
 **Raw data processing.-** NextRAD sequences quality and adapter content were evaluated with FastQC (Andrews 2010). Later, sequences were quality-filtered (Phred quality score > 33) and adapter-trimmed in Trimmomatic with sliding-window function (Bolguer et al 2014). Subsequent filtering and clustering was performed in the assembly and analysis toolkit for restriction-site associated DNA, iPyrad (Eaton and Overcast, 2019). We assembled using the reported genome of Centurus aurifrons deposited in GenBank as reference. We produced different datasets with different parameter combinations, following recommendations in the ipyRAD documentation (Eaton & Overcast, 2020), to evaluate their performance in genetic analyses. Then, we choose the dataset produced with parameter settings that maximized the number of phylogenetically informative sites, while minimizing missing data and eliminating the potential for paralogous loci. Such parameter combination included a Minimum coverage value of 8, grouping threshold of 0.85, a minimum value of groups (taxa) included of 30%, and the maximum number of polymorphic sites shared within a locus of 15. All other parameters were set at default values. The loci were concatenated into combined matrices of nextRAD. Output data was filtered to remove alleles with a population frequency of less than 5% and loci that were heterozygous in all samples. We applied additional filters for eliminating individuals and loci with more than 30% of missing data by using VCFtools v1.15 (Auton & Marcketta, 2009).
+  
 **Data availability.- **
+  
 **Populational genetic structure.-** To explore spatial patterns of genetic structure in our study system we initially performed methods to infer clusters based on genetic similarity of each multilocus genotype: Principal Component Analysis (PCA) and a Discriminant analysis of principal components (DAPC) as implementd in packages SNPRelate v1.6.4 (Zheng et al., 2012) and “adegenet” (Jombart and Ahmed 2011), respectively. For DAPC we used the function find.clusters to find the best number of K genetic clusters in unlinked SNP datasets for each clade. Function find.clusters was set on max.n.clust = 10. The lowest value of the Bayesian Information Criterion (BIC) statistic was used to detect the optimal number of K clusters. 
 Next, we employed the function snmf in LEA package (v2.3.4) (Frichot and François, 2015) to infer population structure and estimate individual admixture coefficients from the genotypic matrix. We evaluated numbers of k from 1-6 with 20 repetitions of each one. The best number of populations (K) was inferred from the entropy criterion that evaluates the quality of fit of the statistical model to the data using a cross-validation technique (Frichot and François, 2015). 
 From groupings obtained by PCA and LEA we calculated pairwise weighted FST according Weir and Cockerman (1984) using Arlequin with Markov chain length of 100000 steps and 10000 Dememorisation Steps. The allowed level of missing data was set to 0.05.
+  
 **Detection of and management of outlier loci.-** *** pcadpt y lea *** correlacion con variables ambientales *** relacion con variacion fenotipica *** ver si hay q retirar estos loci de los analisis de estuct genetica ***
-Due to the admixture patterns hypothesis on our study systems, we calculate ABBA BABA statistics (also called D statistics) provide a simple and powerful test for a deviation from a strict bifurcating evolutionary history. They are therefore frequently used to test for introgression using genome-scale SNP data. The Patterson’s D tests calculate the proportion of ABBA and BABA site patterns, and excess of either is indicative of admixture rather than incomplete lineage sorting (Durand et al., 2012). Significance of each test was determined by performing 1000 bootstrap replicates in which loci were resampled with replacement. Tests were conducted and figures were plotted following the ipyRAD ABBA-BABA cookbook (Deren Eaton & Isaac Overcast, 2019) in Jupyter Notebook. *** (el newick provisto fue obtenido de…)
-**Phylogenetic Analyses.-** We estimated phylogenetic relationships among taxa using two coalescent‐based methods: SNAPP version 1.3 (Bryant, Bouckaert, Felsenstein, Rosenberg,& RoyChoudhury, 2012) as implemented in Beast2 version 2.4.3 (Bouckaert et al., 2014) and Tetrad, an species tree inference tool based on the SVDQuartets algorithm of Chifman and Kubatko (2014) as implemented in the ipyrad-analysis toolkit (Deren Eaton & Isaac Overcast, 2019). We also estimate phylogenetic relationships among and within populations through a phylogenetic network was constructed using the Neighbor-Net algorithm implemented by the software SplitsTree5 [60]. The relationships were estimated using the linked SNPs file. The Neighbor-Net method consists of the agglomeration of weighted collection of splits or partition of the set of taxa which constitute the building blocks of a phylogenetic tree and provides the visualization of the space of feasible trees. Thereof, constitutes a useful tool for the representation of the relationships of taxa in which the underlying evolutionary history may not be treelike due to processes such as recombination, hybridization, gene conversion and gene transfer [61]. (Hernandez Langford 2020)
-Demographic history.- based on the clusters obtained by population genetics and phylogenetic analyses we tested several scenarios explaining current patterns of admixture among taxa. For evaluating the extant and directionality of hybridization events among taxa we employed and compared three different approaches including Maximum Likelihood and Bayesian inference: Patterson’s D tests, Phylonet: (Than et al. 2008) and TreeMix: (Pickrell & Pritchard 2012) analyses. 
-	Once the pairs of lineages with genetic admixture have been obtained, we employed two different approaches to estimate demographic parameters and test the support for competing demographic scenarios.
+  
+**Phylogenetic Analyses.-** We estimated phylogenetic relationships among taxa using two coalescent‐based methods: SNAPP version 1.3 (Bryant, Bouckaert, Felsenstein, Rosenberg,& RoyChoudhury, 2012) as implemented in Beast2 version 2.4.3 (Bouckaert et al., 2014) and Tetrad, an species tree inference tool based on the SVDQuartets algorithm of Chifman and Kubatko (2014) as implemented in the ipyrad-analysis toolkit (Deren Eaton & Isaac Overcast, 2019). We also estimate phylogenetic relationships among and within populations through a phylogenetic network was constructed using the Neighbor-Net algorithm implemented by the software SplitsTree. The relationships were estimated using the linked SNPs file. The Neighbor-Net method consists of the agglomeration of weighted collection of splits or partition of the set of taxa which constitute the building blocks of a phylogenetic tree and provides the visualization of the space of feasible trees. Thereof, constitutes a useful tool for the representation of the relationships of taxa in which the underlying evolutionary history may not be treelike due to processes such as recombination, hybridization, gene conversion and gene transfer. (Hernandez Langford 2020)
+  
+**Demographic history.-** based on the clusters obtained by population genetics and phylogenetic analyses we tested several scenarios explaining current patterns of genetic structure among taxa. For evaluating the extant and directionality of hybridization events among taxa we employed and compared three different approaches including Maximum Likelihood and Bayesian inference: Patterson’s D tests, Phylonet: (Than et al. 2008) and TreeMix: (Pickrell & Pritchard 2012) analyses. ABBA BABA statistics (also called D statistics) provide a simple and powerful test for a deviation from a strict bifurcating evolutionary history. They are therefore frequently used to test for introgression using genome-scale SNP data. The Patterson’s D tests calculate the proportion of ABBA and BABA site patterns, and excess of either is indicative of admixture rather than incomplete lineage sorting (Durand et al., 2012). Significance of each test was determined by performing 1000 bootstrap replicates in which loci were resampled with replacement. Tests were conducted and figures were plotted following the ipyRAD ABBA-BABA cookbook (Deren Eaton & Isaac Overcast, 2019) in Jupyter Notebook. *** (el newick provisto fue obtenido de…). Phylonet (Than et al. 2008) and TreeMix (Pickrell & Pritchard 2012) software were employed to infer the number and directionality of hibridization events among taxa
+	Once the pairs of lineages with genetic admixture have been obtained, we employed two different approaches to estimate demographic parameters and test the support for competing demographic scenarios: momi2 / fastsimcoal
    
 **RESULTS**
 **NextRAD sequencing, filtering and SNPs calling.-** On average 200 Megabases of sequence data, equivalent to ~ 2.3 million of 150 base-pair reads, were obtained from each NextRAD sample library. From these libraries, were obtained on average per sample, 2280924 reads mapped to the Centurus aurifrons genome yielding 225423 clusters and 17740 loci in final assembly. After filtering the ipyrad SNP matrix for alleles in maximum frequency of 5%, and sites and individuals with more than 30% of missing data we obtained a final matrix of 48 individuals (3 outgroups, 5 C. carolinus, 5 C. aurifrons and 35 C. santacruzi) and near to 3000 SNPs.
   
 **Population genetic structure.-** We generated three successive PCAs  by eliminating the most external groups in the previous analyses, for disentangling the structure of genetic variation in C. santacruzi. From first PCA we obtained C. carolinus, C. aurifrons and C. santacruzi in a single cluster regarding to the outgroups C. chrysogenys and Tripsurus pucherani. Next, when removing the outgroups, appear three main clusters containing (1) C. carolinus, (2) C. s. santacruzi and C. s. polygrammus-veraecrucis-grateloupensis-dubius. Finally, considering only this last cluster, we obtained a subdivision between C.s. dubius and C. s. polygrammus-veraecrucis-grateloupensis.   
- 
+   
+   
 _Fig 3. Successive PCAs suggest nested genetic structure in the C. carolinus-C. aurifrons-C. santacruzi complex: a, PCA with all samples; b, PCA without outgroups; c, PCA without outgroups, C. carolinus, and C. s. santacruzi._
 
 From structure-like analyses in LEA we obtained that the most probable number of populations, inferred by the entropy criterion, is K = 4 (Fig 4). When plotted the admixture coefficient by individuals we recovered four genetically differentiated groups including samples corresponding to (1) C. aurifrons, (2) C.s.  santacruzi and (3) C. s. dubius  subspecies, and (4) C. s. polygrammus-veraecrucis-grateloupensis. These groups although appear as genetically differentiated, most of individuals have an important component of genetic information from other entities (Fig 4).  
+   
  
 _Fig 4. Values of the cross-entropy criterion as a function of the number of populations obtained with LEA package in R. The minimum value for K=4 suggests four clusters as best explain of genetic structure in sample._
 
 The groupings obtained with LEA were tested for FST values (Table 1). From these values and their associated probabilities we found significant genetic differentiation between the pairs: C. aurifrons- C. s. dubius, C. aurifrons- C. s. santacruzi, and C. s. santacruzi with all tested groups. No genetic differentiation were found, in turn, between C. aurifrons vs. C. s. polygrammus-veraecrucis-grateloupensis and C. s. dubius vs C. s. polygrammus-veraecrucis-grateloupensis
-
-
-
-
+  
  
 _Fig 5. Ancestry coefficients of individuals included in this study obtained with LEA package and its geographic distribution._ 
-
-
-
-
+  
 _Table 1. Pairwise FST (above the diagonal) and p-value (below the diagonal) for cluster obtained in structure-like analyses in LEA_
 	C. aurifrons	C. s. santacruzi	C. s. dubius	4
 C. aurifrons	*	0.23656	0.17566	0.17312
