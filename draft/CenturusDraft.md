@@ -105,7 +105,7 @@ The groupings obtained with LEA were tested for FST values (Table 1). From these
  
 _Fig 5. Ancestry coefficients of individuals included in this study obtained with LEA package and its geographic distribution._ 
   
-_Table 1. Pairwise FST (above the diagonal) and p-value (below the diagonal) for cluster obtained in structure-like analyses in LEA_
+_Table 1. Pairwise FST (above the diagonal) and p-value (below the diagonal) for cluster obtained in structure-like analyses in LEA_  
 |	|C. aurifrons	|C. s. santacruzi	|C. s. dubius	|4|
 |C. aurifrons|	*	|0.23656	|0.17566	|0.17312|
 |C. s. santacruzi|0.02921+-0.0015	|*	0.1711	|0.1863|
