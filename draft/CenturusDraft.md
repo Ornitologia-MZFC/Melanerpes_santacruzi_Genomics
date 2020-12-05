@@ -1,8 +1,8 @@
 ## The tangled evolutionary history of the Mesoamerican Velazquez Woodpecker complex (Centurus santacruzi, Aves: Picidae) revealed by using Next Generation Sequencing data ##  
-Llanes-Quevedo, A.1,2, A. Mastretta-Yanes 3, L. A. Sánchez-González 1, A. G. Navarro-Sigüenza 1
-1 Museo de Zoología “Alfonso L. Herrera”, Facultad de Ciencias, Universidad Nacional Autónoma de México, México
-2 Posgrado en Ciencias Biológicas, Universidad Nacional Autónoma de México 
-3 Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, México
+Llanes-Quevedo, A.1,2, A. Mastretta-Yanes 3, L. A. Sánchez-González 1, A. G. Navarro-Sigüenza 1  
+1 _Museo de Zoología “Alfonso L. Herrera”, Facultad de Ciencias, Universidad Nacional Autónoma de México, México_
+2 _Posgrado en Ciencias Biológicas, Universidad Nacional Autónoma de México_ 
+3 _Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, México_
 
 **Abstract.-** The Velazquez woodpecker Centurus santacruzi (Aves: Picidae) is a polytypic species distributed from the center-east regions of Mexico to North Nicaragua and Honduras islands. The ample morphological differentiation throughout its distribution has provoked the taxonomic recognition of several subspecies grouped in three main groups 
 (santacruzi, dubius and polygrammus). Previous molecular studies have shown the close phylogenetic relationship of this complex with the Golden-fronted woopecker (C. aurifrons)
@@ -106,11 +106,11 @@ The groupings obtained with LEA were tested for FST values (Table 1). From these
 _Fig 5. Ancestry coefficients of individuals included in this study obtained with LEA package and its geographic distribution._ 
   
 _Table 1. Pairwise FST (above the diagonal) and p-value (below the diagonal) for cluster obtained in structure-like analyses in LEA_
-	C. aurifrons	C. s. santacruzi	C. s. dubius	4
-C. aurifrons	*	0.23656	0.17566	0.17312
-C. s. santacruzi	0.02921+-0.0015	*	0.1711	0.1863
-C. s. dubius	0.02099+-0.0014	0.00079+-0.0003	*	0.011
-4	0.07366+-0.0024	0.00020+-0.0001	0.19424+-0.0041	*
+|	|C. aurifrons	|C. s. santacruzi	|C. s. dubius	|4|
+|C. aurifrons|	*	|0.23656	|0.17566	|0.17312|
+|C. s. santacruzi|0.02921+-0.0015	|*	0.1711	|0.1863|
+|C. s. dubius	|0.02099+-0.0014	|0.00079+-0.0003|*	|0.011|
+|4	|0.07366+-0.0024	|0.00020+-0.0001|0.19424+-0.0041*|
   
 **Phylogenetic Analyses.-** 
    
