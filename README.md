@@ -17,7 +17,8 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 **[_5-run_plink.sh_](/bin/5-run_plink.sh)** runs a basic command for converting .vcf format to .plink **(run once vcftools instructions are completed).**    
 **[_PCA-Structure.R_](/bin/PCA-Structure.R)** contains a script for performing Principal Components and Structure-like Analyses, as well as a test of outlier loci in the sample **(run when plink and vcftools outputs have been obtained).**   
 
-`**/data**` 
+## `/data`
+  
 **[_data_](/data)**: contains three directories *1.raw*, *2.ipyrad_outputs* and *3.clean_matrix*.  
 
 1. raw contains the raw data as obtained by sequencing service
