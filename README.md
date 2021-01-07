@@ -1,6 +1,8 @@
 ## Population genomics of _Centurus santacruzi_ Complex
 
-**This repository includes the data and scripts generated for the manuscript "The tangled evolutionary history of the Mesoamerican Velazquez Woodpecker complex (Centurus santacruzi, Aves: Picidae) revealed by using Next Generation Sequencing data" (in prep.). The repository is structured in three directories: _bin_, _data_ and _meta_. the content of each directory is delailed below.**
+![](mela.jpeg) 
+
+**This repository includes the data and scripts generated for the manuscript "The tangled evolutionary history of the Mesoamerican Velazquez Woodpecker complex (Centurus santacruzi, Aves: Picidae) revealed by using Next Generation Sequencing data" (in prep.). The repository is structured in three directories: _bin_, _data_ and _meta_. The content of each directory is delailed below.**
   
 **[_bin_](/bin)**: contains the parameter configuration file to run ipyrad and four scripts for analyses illustrated in the figure below;    
   
