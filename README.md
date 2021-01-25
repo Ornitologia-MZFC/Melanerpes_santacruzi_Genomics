@@ -21,7 +21,7 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) V0.39  
 [iPyrad](https://ipyrad.readthedocs.io/en/latest/index.html)  
 [VCFTools](https://vcftools.github.io/) V0.1.16  
-[PLINK](http://zzz.bwh.harvard.edu/plink/) v1.90b6.18  
+[PLINK](http://zzz.bwh.harvard.edu/plink/) v1.90b6.18**  
 
 ## `/data`
 **[_data_](/data)** contains three directories *1.raw*, *2.ipyrad_outputs* and *3.clean_matrix*.  
