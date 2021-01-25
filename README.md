@@ -15,7 +15,13 @@ This repository includes the data and scripts generated for the manuscript "The 
 runs ipyrad, an interactive assembly and analysis toolkit for restriction-site associated DNA (RAD-seq) and related data types. Configuration parameters are specified in *params-run_w_refgen.txt* **(Clean data is not included in the repository, so this script cannot be executed).**   
 **[_3-run_vcftools.sh_](/bin/3-run_vcftools.sh)** for filtering individuals and SNPs sites containing a maximun of 30% of missing data and write in a new vcf file; as well as calculating allele frequency, HWE statistics and inbreeding coefficient **(run first).**    
 **[_4-run_plink.sh_](/bin/4-run_plink.sh)** runs a basic command for converting .vcf format to .plink **(run once vcftools instructions are completed).**    
-**[_5-PCA&Structure.R_](/bin/5-PCA&Structure.R)** contains a script for performing Principal Components and Structure-like Analyses, as well as a test of outlier loci in the sample **(run when plink and vcftools outputs have been obtained).**   
+**[_5-PCA&Structure.R_](/bin/5-PCA&Structure.R)** contains a script for performing Principal Components and Structure-like Analyses, as well as a test of outlier loci in the sample **(run when plink and vcftools outputs have been obtained).**  
+  
+The software version employed are:
+(Trimmomatic)[http://www.usadellab.org/cms/?page=trimmomatic] V0.39
+(iPyrad)[https://ipyrad.readthedocs.io/en/latest/index.html]
+(VCFTools)[https://vcftools.github.io/] V0.1.16
+(PLINK)[http://zzz.bwh.harvard.edu/plink/] v1.90b6.18
 
 ## `/data`
 **[_data_](/data)** contains three directories *1.raw*, *2.ipyrad_outputs* and *3.clean_matrix*.  
