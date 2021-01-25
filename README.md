@@ -10,12 +10,12 @@ This repository includes the data and scripts generated for the manuscript "The 
 ![](workflow.png) 
   
 
-**[_1-run_trimmomatic.sh_](/bin/2-run_trimmomatic.sh)** runs a loop for executing trimmomatic on raw samples, specifically the function slidingwindow. Slidingwindow starts scanning at the 5´ end and clips the readonce the average quality within the window (4 bp) falls below a quality threshold (20) **(Raw data is not included in the repository, so this script cannot be executed).**   
-**[_2-run_ipyrad.sh_](/bin/3-run_ipyrad.sh)**
+**[_1-run_trimmomatic.sh_](/bin/1-run_trimmomatic.sh)** runs a loop for executing trimmomatic on raw samples, specifically the function slidingwindow. Slidingwindow starts scanning at the 5´ end and clips the readonce the average quality within the window (4 bp) falls below a quality threshold (20) **(Raw data is not included in the repository, so this script cannot be executed).**   
+**[_2-run_ipyrad.sh_](/bin/2-run_ipyrad.sh)**
 runs ipyrad, an interactive assembly and analysis toolkit for restriction-site associated DNA (RAD-seq) and related data types. Configuration parameters are specified in *params-run_w_refgen.txt* **(Clean data is not included in the repository, so this script cannot be executed).**   
-**[_3-run_vcftools.sh_](/bin/4-run_vcftools.sh)** for filtering individuals and SNPs sites containing a maximun of 30% of missing data and write in a new vcf file; as well as calculating allele frequency, HWE statistics and inbreeding coefficient **(run first).**    
-**[_4-run_plink.sh_](/bin/5-run_plink.sh)** runs a basic command for converting .vcf format to .plink **(run once vcftools instructions are completed).**    
-**[_5-PCA-Structure.R_](/bin/PCA-Structure.R)** contains a script for performing Principal Components and Structure-like Analyses, as well as a test of outlier loci in the sample **(run when plink and vcftools outputs have been obtained).**   
+**[_3-run_vcftools.sh_](/bin/3-run_vcftools.sh)** for filtering individuals and SNPs sites containing a maximun of 30% of missing data and write in a new vcf file; as well as calculating allele frequency, HWE statistics and inbreeding coefficient **(run first).**    
+**[_4-run_plink.sh_](/bin/4-run_plink.sh)** runs a basic command for converting .vcf format to .plink **(run once vcftools instructions are completed).**    
+**[_5-PCA&Structure.R_](/bin/5-PCA&Structure.R)** contains a script for performing Principal Components and Structure-like Analyses, as well as a test of outlier loci in the sample **(run when plink and vcftools outputs have been obtained).**   
 
 ## `/data`
 **[_data_](/data)** contains three directories *1.raw*, *2.ipyrad_outputs* and *3.clean_matrix*.  
