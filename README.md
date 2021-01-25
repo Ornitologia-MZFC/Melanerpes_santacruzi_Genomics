@@ -17,7 +17,7 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 **[_4-run_plink.sh_](/bin/4-run_plink.sh)** runs a basic command for converting .vcf format to .plink **(run once vcftools instructions are completed).**    
 **[_5-PCA&Structure.R_](/bin/5-PCA&Structure.R)** contains a script for performing Principal Components and Structure-like Analyses, as well as a test of outlier loci in the sample **(run when plink and vcftools outputs have been obtained).**  
   
-The software version employed are:
+**The software version employed are:  
 [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) V0.39  
 [iPyrad](https://ipyrad.readthedocs.io/en/latest/index.html)  
 [VCFTools](https://vcftools.github.io/) V0.1.16  
