@@ -1,0 +1,99 @@
+---
+title: "Hierarchical_PCA"
+author: "Alex"
+output: html_document
+---
+
+#Required package
+```{r,  echo=FALSE}
+library(gdsfmt)
+library(SNPRelate)
+library(ggplot2)
+library(ape)
+```
+
+#Convert plink to gds
+```{r}
+snpgdsBED2GDS("PCA/sant48ind.bed", "PCA/sant48ind.fam", "PCA/sant48ind.bim", "gds_run5.gdsfn", family = FALSE, snpfirstdim = NA, compress.annotation = "LZMA_RA", compress.geno = "", option = NULL, cvt.chr = c("char"),cvt.snpid = c("auto","int"), verbose = FALSE)
+```
+
+
+```{r,  echo=FALSE}
+genfile_run5<-snpgdsOpen("gds_run5.gdsfn")
+```
+
+#Get SNP IDs
+```{r,  echo=FALSE}
+head(read.gdsn(index.gdsn(genfile_run5, "snp.id")))
+sample.id<-read.gdsn(index.gdsn(genfile_run5, "sample.id"))
+sample.id
+```
+
+#Run PCA con todas las muestras
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+pca1<-snpgdsPCA(genfile_run5,sample.id = NULL, snp.id = NULL, autosome.only = FALSE )
+
+tab1 <- data.frame(sample.id = pca1$sample.id,
+                   EV1 = pca1$eigenvect[,1],    # the first eigenvector
+                   EV2 = pca1$eigenvect[,2],    # the second eigenvector
+                   stringsAsFactors = FALSE)       
+
+head(tab1)
+pc.percent1 <- pca1$varprop*100
+x<-round(pc.percent1, 2)
+
+sum(x[1:4])
+sum(x[1:10])
+sum(x[1:30])
+ggplot(data = tab1, aes(x=EV2, y=EV1)) + geom_point() +
+  ylab(paste0("eigenvector 1 explains ", round(pc.percent1, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explains ", round(pc.percent1, 2)[2], "%"))+
+  geom_text(label=(sample.id),size=3, check_overlap = TRUE, hjust = 0, nudge_x = 0.005) +ggtitle("centurus")
+```
+
+#Run PCA without outgrups (carolinus-aurifrons-santacruzi)                                                                                                       
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+pca2<-snpgdsPCA(genfile_run5,sample.id = c("0471-OAX", "AMT210","GES196-YUC","HP068D","MZFC04030-TAB","Mcarolinus07","Mcarolinus071", "Mcarolinus09","Mcarolinus10","Mcarolinus11","Mcarolinus13",  "NIZA044-OAX",   "QRO081","SOSI130-CHI", "TQ05D","Tol55","Tol56", "Tol57","Tol62","Tol72","Y408-024","aurif02-SLP","aurif05-QRO","aurif06-QRO", "dub30-CAM", "dub32-YUC", "dub33-YUC", "dub34-YUC","dub35-YUC","grat08-TAM",    "grat09-TAM",    "grat12-VER",    "pol14-OAX",     "pol15-OAX",     "pol16-OAX",     "pol18-OAX",     "pol19-CHI",   "sant40-CHI",    "sant41-CHI",    "sant42-CHI",    "ver21-VER",     "ver22-VER",     "ver24-VER",     "ver26-TAB"), snp.id = NULL, autosome.only = FALSE )                    #
+
+
+tab2 <- data.frame(sample.id = pca2$sample.id,
+                 EV1 = pca2$eigenvect[,1],    # the first eigenvector
+                 EV2 = pca2$eigenvect[,2],    # the second eigenvector
+                 stringsAsFactors = FALSE)       
+
+head(tab2)
+pc.percent1 <- pca2$varprop*100
+x<-round(pc.percent1, 2)
+
+sum(x[1:4])
+sum(x[1:10])
+sum(x[1:30])
+ggplot(data = tab2, aes(x=EV2, y=EV1)) + geom_point() +
+  ylab(paste0("eigenvector 1 explains ", round(pc.percent1, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explains ", round(pc.percent1, 2)[2], "%"))+
+  geom_text(label=(sample.id = c("0471-OAX", "AMT210","GES196-YUC","HP068D","MZFC04030-TAB","Mcarolinus07","Mcarolinus071", "Mcarolinus09","Mcarolinus10","Mcarolinus11","Mcarolinus13","NIZA044-OAX","QRO081","SOSI130-CHI", "TQ05D","Tol55","Tol56", "Tol57","Tol62","Tol72","Y408-024","aurif02-SLP","aurif05-QRO","aurif06-QRO", "dub30-CAM", "dub32-YUC", "dub33-YUC","dub34-YUC","dub35-YUC","grat08-TAM","grat09-TAM","grat12-VER","pol14-OAX","pol15-OAX","pol16-OAX","pol18-OAX","pol19-CHI","sant40-CHI","sant41-CHI","sant42-CHI","ver21-VER","ver22-VER","ver24-VER","ver26-TAB")),size=1.5, check_overlap = TRUE, hjust = 0, nudge_x = 0.005) +ggtitle("PCA_carolinus-aurifrons-santacruzi")
+```
+
+#Run PCA without carolinus (aurifrons-santacruzi)                                                                                                      
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+pca3<-snpgdsPCA(genfile_run5,sample.id = c("0471-OAX", "AMT210","GES196-YUC","HP068D","MZFC04030-TAB","NIZA044-OAX","QRO081","SOSI130-CHI", "TQ05D","Tol55","Tol56", "Tol57","Tol62","Tol72","Y408-024","aurif02-SLP","aurif05-QRO","aurif06-QRO","dub30-CAM","dub32-YUC","dub33-YUC", "dub34-YUC","dub35-YUC","grat08-TAM","grat09-TAM","grat12-VER","pol14-OAX","pol15-OAX","pol16-OAX","pol18-OAX","pol19-CHI","sant40-CHI",   "sant41-CHI","sant42-CHI","ver21-VER","ver22-VER","ver24-VER","ver26-TAB"), snp.id = NULL, autosome.only = FALSE )                    #
+
+
+tab3 <- data.frame(sample.id = pca3$sample.id,
+                   EV1 = pca3$eigenvect[,1],    # the first eigenvector
+                   EV2 = pca3$eigenvect[,2],    # the second eigenvector
+                   stringsAsFactors = FALSE)       
+
+head(tab3)
+pc.percent1 <- pca3$varprop*100
+x<-round(pc.percent1, 2)
+
+sum(x[1:4])
+sum(x[1:10])
+sum(x[1:30])
+ggplot(data = tab3, aes(x=EV2, y=EV1)) + geom_point() +
+  ylab(paste0("eigenvector 1 explains ", round(pc.percent1, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explains ", round(pc.percent1, 2)[2], "%"))+
+  geom_text(label=(sample.id = c("0471-OAX", "AMT210","GES196-YUC","HP068D","MZFC04030-TAB","NIZA044-OAX","QRO081","SOSI130-CHI", "TQ05D","Tol55","Tol56", "Tol57","Tol62","Tol72","Y408-024","aurif02-SLP","aurif05-QRO","aurif06-QRO","dub30-CAM","dub32-YUC","dub33-YUC", "dub34-YUC","dub35-YUC","grat08-TAM","grat09-TAM","grat12-VER","pol14-OAX","pol15-OAX","pol16-OAX","pol18-OAX","pol19-CHI","sant40-CHI",   "sant41-CHI","sant42-CHI","ver21-VER","ver22-VER","ver24-VER","ver26-TAB")),size=1.5, check_overlap = TRUE, hjust = 0, nudge_x = 0.005) +ggtitle("aurifrons-santacruzi")
+```
+
