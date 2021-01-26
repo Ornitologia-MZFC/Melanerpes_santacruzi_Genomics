@@ -2,7 +2,12 @@
 
 ![](mela.jpeg) 
 
-This repository includes the data and scripts generated for the manuscript "The tangled evolutionary history of the Mesoamerican Velazquez Woodpecker complex (Centurus santacruzi, Aves: Picidae) revealed by using Next Generation Sequencing data" (in prep.). The repository is structured in three directories: _bin_, _data_ and _meta_. The content of each directory is delailed below.
+This repository corresponds the manuscript "The tangled evolutionary history of the Mesoamerican Velazquez Woodpecker complex (Centurus santacruzi, Aves: Picidae) revealed by using Next Generation Sequencing data" (in prep.). 
+
+**Background**
+The Velazquez woodpecker Centurus santacruzi (Aves: Picidae) is a polytypic species distributed from the center-east regions of Mexico to North Nicaragua and Honduras islands. The ample morphological differentiation throughout its distribution has provoked the taxonomic recognition of several subspecies grouped in three main groups (santacruzi, dubius and polygrammus). Previous molecular studies have shown the close phylogenetic relationship of this complex with the Golden-fronted woopecker (C. aurifrons) and the Red-bellied woodpecker (C. carolinus); however, they fail to fully-resolve the evolutionary relationships among the subspecies. Herein, we employed NextRAD sequences (single-end 150 bp reads generated with Illumina HiSeq4000) for analyzing the genetic diversity and structure within the morphotypes of the complex, and the correspondence of this variation with geography and ecology
+  
+This repository includes the data and scripts generated for the manuscript (preprocessing of samples, cleaning of matrices and population structure analyses) and is structured in three directories: _bin_, _data_, _results_ and _meta_. The content of each directory is delailed below.
    
 ## `/bin`
 **[_bin_](/bin)** contains the parameter configuration file to run ipyrad and four scripts for analyses illustrated in the following figure;    
@@ -32,6 +37,9 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 
 ## `/meta`
 **[_meta_](/meta)** contains metadata of sequenced individuals (needed to run the filtering individuals option of vcftools).  The info contained in the metadata file include the Scientific name according to the [American Ornithological Union](https://americanornithology.org/publications/north-and-middle-american-checklist/), State of collection (in Mexico), Specimen Code, Latitude and Longitude.
+  
+## `/results`
+**[_results_](/results)** contains
 
 
 
