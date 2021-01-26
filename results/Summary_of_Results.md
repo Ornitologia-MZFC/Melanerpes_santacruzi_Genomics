@@ -6,7 +6,7 @@
 ![](pca2.png)
 ![](pca3.png)
   
-We performed structure-like analyses in LEA with the dataset containing only _C. aurifrons_ and _C. santacruzi_. We obtained that the most probable number of populations, inferred by the entropy criterion, is K = 4. When plotted the admixture coefficient by individuals we recovered four genetically differentiated groups including samples corresponding to _C. aurifrons_(in gray), _C.s.  santacruzi_(dark blue) and _C. s. dubius_ (blue) subspecies, and _C. s. polygrammus-veraecrucis-grateloupensis_ (ligth blue). These groups although appear as genetically differentiated, most of individuals have an important component of genetic information from other entities.
+We performed structure-like analyses in LEA with the dataset containing only _C. aurifrons_ and _C. santacruzi_. We obtained that the most probable number of populations, inferred by the entropy criterion, is K = 4. When plotted the admixture coefficient by individuals we recovered four genetically differentiated groups including samples corresponding to _C. aurifrons_ (in gray), _C.s.  santacruzi_ (dark blue) and _C. s. dubius_ (blue) subspecies, and _C. s. polygrammus-veraecrucis-grateloupensis_ (ligth blue). These groups although appear as genetically differentiated, most of individuals have an important component of genetic information from other entities.
   
 ![](bestK.png)
 ![](admixt_coeff.png)
