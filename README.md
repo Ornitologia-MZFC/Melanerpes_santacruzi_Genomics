@@ -5,7 +5,7 @@
 This repository corresponds the manuscript "The tangled evolutionary history of the Mesoamerican Velazquez Woodpecker complex (Centurus santacruzi, Aves: Picidae) revealed by using Next Generation Sequencing data" (in prep.). 
 
 **Background**  
-The Velazquez woodpecker Centurus santacruzi (Aves: Picidae) is a polytypic species distributed from the center-east regions of Mexico to North Nicaragua and Honduras islands. The ample morphological differentiation throughout its distribution has provoked the taxonomic recognition of several subspecies grouped in three main groups (santacruzi, dubius and polygrammus). Previous molecular studies have shown the close phylogenetic relationship of this complex with the Golden-fronted woopecker (C. aurifrons) and the Red-bellied woodpecker (C. carolinus); however, they fail to fully-resolve the evolutionary relationships among the subspecies. Herein, we employed NextRAD sequences (single-end 150 bp reads generated with Illumina HiSeq4000) for analyzing the genetic diversity and structure within the morphotypes of the complex, and the correspondence of this variation with geography and ecology
+The Velazquez woodpecker Centurus santacruzi (Aves: Picidae) is a polytypic species distributed from the center-east regions of Mexico to North Nicaragua and Honduras islands (Howell and Webb, 1995). The ample morphological differentiation throughout its distribution has provoked the taxonomic recognition of several subspecies grouped in three main groups: santacruzi, dubius and polygrammus(Ridgway, 1914; Peters, 1948; Selander and Giller, 1963; AOU 1998). Previous molecular studies have shown the close phylogenetic relationship of this complex with the Golden-fronted woopecker (C. aurifrons) and the Red-bellied woodpecker (C. carolinus); however, they fail to fully-resolve the evolutionary relationships among the subspecies (García-Trejo et al 2009, Navarro-Siguenza et al 2017). Herein, we employed NextRAD sequences (single-end 150 bp reads generated with Illumina HiSeq4000) for analyzing the genetic diversity and structure within the morphotypes of the complex, and the correspondence of this variation with geography and ecology
   
 This repository includes the data and scripts generated for the manuscript (preprocessing of samples, cleaning of matrices and population structure analyses) and is structured in three directories: _bin_, _data_, _results_ and _meta_. The content of each directory is delailed below.
    
@@ -42,6 +42,12 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 **[_results_](/results)** contains
 
 
+**Cited Literature**
+García-Trejo, E. A., De Los Monteros, A. E., Arizmendi, M. D. C., & Navarro-Siüenza, A. G. (2009). Molecular systematics of the red-bellied and golden-fronted woodpeckers. The Condor, 111(3), 442-452.  
+Howell, S. N., & Webb, S. (1995). A guide to the birds of Mexico and northern Central America. Oxford University Press.  
+Navarro-Sigüenza, A. G., Vázquez-Miranda, H., Hernández-Alonso, G., García-Trejo, E. A., & Sánchez-González, L. A. (2017). Complex biogeographic scenarios revealed in the diversification of the largest woodpecker radiation in the New World. Molecular phylogenetics and evolution, 112, 53-67. 
+Ridgway, R. (1914). The Birds of North and Middle America: A descriptive catalogue of the higher groups, genera, species, and subspecies of birds known to occur in North America, from the Arctic Lands to the Isthmus of Panama, the West Indies and Other Islands of the Caribbean Sea, and the Galapagos Archipelago (No. 50). US Government Printing Office.  
+Selander, R. K., & Giller, D. R. (1963). Species limits in the woodpecker genus Centurus (Aves). Bulletin of the AMNH; v. 124, article 6.
 
 
 
