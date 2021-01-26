@@ -39,7 +39,7 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 **[_meta_](/meta)** contains metadata of sequenced individuals (needed to run the filtering individuals option of vcftools).  The info contained in the metadata file include the Scientific name according to the [American Ornithological Union](https://americanornithology.org/publications/north-and-middle-american-checklist/), State of collection (in Mexico), Specimen Code, Latitude and Longitude.
   
 ## `/results`
-**[_results_](/results)** contains
+**[_results_](/results)** contains a [summary of results](/results/Summary_of_Results.md) generated with the aforementioned pipeline and also an HTML report of the PCA 
 
 
 ##
