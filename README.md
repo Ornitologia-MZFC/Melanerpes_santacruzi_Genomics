@@ -45,11 +45,11 @@ runs ipyrad, an interactive assembly and analysis toolkit for restriction-site a
 ##
   
 ***Cited Literature***  
-García-Trejo, E. A., De Los Monteros, A. E., Arizmendi, M. D. C., & Navarro-Siüenza, A. G. (2009). Molecular systematics of the red-bellied and golden-fronted woodpeckers. The Condor, 111(3), 442-452.  
-Howell, S. N., & Webb, S. (1995). A guide to the birds of Mexico and northern Central America. Oxford University Press.  
-Navarro-Sigüenza, A. G., Vázquez-Miranda, H., Hernández-Alonso, G., García-Trejo, E. A., & Sánchez-González, L. A. (2017). Complex biogeographic scenarios revealed in the diversification of the largest woodpecker radiation in the New World. Molecular phylogenetics and evolution, 112, 53-67. 
-Ridgway, R. (1914). The Birds of North and Middle America: A descriptive catalogue of the higher groups, genera, species, and subspecies of birds known to occur in North America, from the Arctic Lands to the Isthmus of Panama, the West Indies and Other Islands of the Caribbean Sea, and the Galapagos Archipelago (No. 50). US Government Printing Office.  
-Selander, R. K., & Giller, D. R. (1963). Species limits in the woodpecker genus Centurus (Aves). Bulletin of the AMNH; v. 124, article 6.
+**García-Trejo, E. A., De Los Monteros, A. E., Arizmendi, M. D. C., & Navarro-Siüenza, A. G.** (2009). Molecular systematics of the red-bellied and golden-fronted woodpeckers. The Condor, 111(3), 442-452.  
+**Howell, S. N., & Webb, S.** (1995). A guide to the birds of Mexico and northern Central America. Oxford University Press.  
+**Navarro-Sigüenza, A. G., Vázquez-Miranda, H., Hernández-Alonso, G., García-Trejo, E. A., & Sánchez-González, L. A.** (2017). Complex biogeographic scenarios revealed in the diversification of the largest woodpecker radiation in the New World. Molecular phylogenetics and evolution, 112, 53-67. 
+**Ridgway, R.**(1914). The Birds of North and Middle America: A descriptive catalogue of the higher groups, genera, species, and subspecies of birds known to occur in North America, from the Arctic Lands to the Isthmus of Panama, the West Indies and Other Islands of the Caribbean Sea, and the Galapagos Archipelago (No. 50). US Government Printing Office.  
+**Selander, R. K., & Giller, D. R.** (1963). Species limits in the woodpecker genus Centurus (Aves). Bulletin of the AMNH; v. 124, article 6.
 
 
 
